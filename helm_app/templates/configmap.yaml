@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ .Values.fullname }}-configmap
+data:
+  monitoring.config:
+    apiEndpoint: {{ .Values.config.monitoring.apiEndpoint | quote }}
+    apiKey: {{ .Values.config.monitoring.apiKey | quote }}
+    pollingInterval: {{ .Values.config.monitoring.pollingInterval | quote }}
+  alerting.config:
+    emailNotifications: {{ .Values.config.alerting.emailNotifications | quote }}
+    slackNotifications: {{ .Values.config.alerting.slackNotifications | quote }}

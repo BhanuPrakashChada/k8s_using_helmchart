@@ -1,0 +1,13 @@
+apiVersion: v2
+name: monitoring-app
+description: A Helm chart for deploying my app on Kubernetes
+type: application
+version: 0.1.0
+appVersion: "1.16.0"
+keywords:
+  - app
+  - python
+home: https://github.com/BhanuPrakashChada/k8s_using_helmchart.git
+maintainers:
+  - name: Bhanu Prakash 
+    url: https://github.com/BhanuPrakashChada
